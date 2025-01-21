@@ -1,6 +1,5 @@
 
-body 
-{
+body {
   font-family: 'Roboto', sans-serif;
   background-color: #e9f5e9;
   color: #2f4f2f;
@@ -13,8 +12,7 @@ body
   box-sizing: border-box;
 }
 
-.app 
-{
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,15 +25,13 @@ body
   border-radius: 10px;
 }
 
-h1, h2 
-{
+h1, h2 {
   text-align: center;
   color: #2f8f2f;
   margin: 0;
 }
 
-.editor-preview-container 
-{
+.editor-preview-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -44,8 +40,7 @@ h1, h2
   padding: 20px;
 }
 
-textarea, #preview 
-{
+textarea, #preview {
   flex: 1.5;
   min-width: 300px;
   max-width: 600px;
@@ -58,63 +53,43 @@ textarea, #preview
   overflow-y: auto;
 }
 
-textarea 
-{
+textarea {
   background-color: #f5fff5;
   resize: none;
   font-size: 16px;
   color: #2f4f2f;
 }
 
-#preview 
-{
+#preview {
   word-wrap: break-word;
   color: #2f4f2f;
 }
 
-#preview img 
-{
+#preview img {
   max-width: 80%;
   height: auto;
   margin: 10px auto;
   display: block;
 }
 
-#preview h1, #preview h2, #preview h3 
-{
+#preview h1, #preview h2 {
   margin-top: 10px;
   color: #2f8f2f;
   text-align: center;
 }
 
-#preview h1 
-{
+#preview h1 {
   font-size: 2em;
   border-bottom: 2px solid #a8d5a8;
   padding-bottom: 5px;
 }
 
-#preview h2 
-{
+#preview h2 {
   font-size: 1.8em;
   margin-bottom: 5px;
 }
 
-#preview h3 
-{
-  font-size: 1.5em;
-  margin-bottom: 5px;
-}
-
-#preview p 
-{
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-#preview blockquote 
-{
+#preview blockquote {
   font-style: italic;
   color: #666;
   border-left: 4px solid #a8d5a8;
@@ -124,17 +99,15 @@ textarea
   border-radius: 5px;
 }
 
-#preview code 
-{
+#preview code {
   background-color: #e9f5e9;
   padding: 2px 5px;
   border-radius: 3px;
   font-family: 'Courier New', Courier, monospace;
-  color: #2f8f2f;
+  color: #2f4f2f;
 }
 
-#preview pre 
-{
+#preview pre {
   background-color: #f5fff5;
   padding: 10px;
   border-radius: 5px;
@@ -143,65 +116,30 @@ textarea
   border: 1px solid #a8d5a8;
 }
 
-#preview ul 
-{
+#preview ul {
   margin: 10px 0;
   padding-left: 20px;
   list-style-type: disc;
 }
 
-#preview ol 
-{
-  margin: 10px 0;
-  padding-left: 20px;
-  list-style-type: decimal;
-}
-
-#preview table 
-{
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  border: 1px solid #a8d5a8;
-}
-
-#preview th, #preview td 
-{
-  border: 1px solid #a8d5a8;
-  padding: 10px;
-  text-align: left;
-  background-color: #f9fff9;
-}
-
-#preview th 
-{
-  font-weight: bold;
-  background-color: #e9f5e9;
-}
-
-#preview a:hover 
-{
+#preview a:hover {
   color: #005500;
   text-decoration: underline;
 }
 
-@media (max-width: 768px) 
-{
-  .editor-preview-container 
-  {
+@media (max-width: 768px) {
+  .editor-preview-container {
     flex-direction: column;
     gap: 10px;
   }
 
-  textarea, #preview 
-  {
+  textarea, #preview {
     width: 100%;
     min-height: 400px;
     max-height: 600px;
   }
 
-  textarea
-  {
+  textarea {
     margin-bottom: 10px;
   }
 }
